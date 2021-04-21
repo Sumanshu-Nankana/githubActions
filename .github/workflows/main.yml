@@ -7,4 +7,4 @@ jobs:
     steps:
     - uses: actions/checkout@main
     - name: Install Dependencies and Execute Tests Cases
-    - run: pip3 install -r requirements.txt && pytest -v
+      run: pip3 install -r requirements.txt && pytest -v
