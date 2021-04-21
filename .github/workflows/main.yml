@@ -6,5 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@main
+    - name: Setup File
+      run: python3 setup.py develop
     - name: Install Dependencies and Execute Tests Cases
       run: pip3 install -r requirements.txt && pytest -v
